@@ -1,8 +1,9 @@
 import React from 'react';
+import style from './page.module.css';
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className={style.contain}>
             contact
         </div>
     );

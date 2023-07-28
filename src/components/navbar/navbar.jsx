@@ -5,7 +5,7 @@ const Navbar = () => {
     const links = [
         {
           "id": 1,
-          "slug": "home",
+          "slug": "/",
           "title": "Home"
         },
         {
@@ -35,9 +35,9 @@ const Navbar = () => {
         }
       ]
     return (
-        <div>
+        <div className='flex justify-between mt-5'>
             <Link href='/'>Nieem's</Link>
-            <nav>
+            <nav className='space-x-5 '>
               {  links.map(item => <Link key={item.id} href={item.slug}> {item.title} </Link> )}
             </nav>
         </div>

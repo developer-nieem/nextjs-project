@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            footer
+            <div>
+                Nieem's All right received
+            </div>
         </div>
     );
 };
