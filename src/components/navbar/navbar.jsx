@@ -1,5 +1,7 @@
+'use client';
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../../context/ThemeContext';
 
 const Navbar = () => {
     const links = [
@@ -34,8 +36,12 @@ const Navbar = () => {
           "title": "Contact"
         }
       ]
+
+      const {name} =  useContext(ThemeContext);
+      console.log(name);
+      
     return (
-        <div className='flex justify-between mt-5'>
+        <div className='flex justify-between pt-5'>
             <Link href='/'>Nieem's</Link>
             <nav className='space-x-5 '>
               {  links.map(item => <Link key={item.id} href={item.slug}> {item.title} </Link> )}

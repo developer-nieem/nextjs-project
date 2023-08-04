@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className='md:col-6 flex justify-center'>
-       <Image className='w-96 ' src='https://images.pexels.com/photos/15679391/pexels-photo-15679391/free-photo-of-spikes-and-painting-in-home-decor.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' alt='hero' width={400} height={300}></Image>
+       <Image className='w-96 img' src='https://images.pexels.com/photos/15679391/pexels-photo-15679391/free-photo-of-spikes-and-painting-in-home-decor.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' alt='hero' width={400} height={300}></Image>
       </div>
      
     </div>

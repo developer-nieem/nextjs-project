@@ -1,3 +1,14 @@
 .contain{
     background: red;
 }
+
+.img{
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+}
